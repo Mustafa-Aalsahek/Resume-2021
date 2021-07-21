@@ -49,7 +49,36 @@
 #personal-area .personal-text h2 span b {
   font-weight: 700;
 }
-#personal-area .personal-text .btn {
+/*  Button hover effect  */
+.btns {
+  text-decoration: none;
+  padding: 24px 72px;
+  background-color: #7a4009;
+  color: #fff;
+  border-radius: 100px;
+  font-weight: bolder;
+  font-size: 22px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.btns::before {
+  content: "";
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  transform: translate(-50%, -50%);
+  background-image: radial-gradient(circle closest-side, #ff7a00, transparent);
+  width: 0;
+  height: 0;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+.btns:hover::before {
+  width: 250px;
+  height: 250px;
+}
+/*============================================*/
+/*#personal-area .personal-text .btn {
   margin-right: 20px;
   padding: 13px 35px;
   overflow: hidden;
@@ -63,7 +92,7 @@
 }
 #personal-area .btn {
   top: 20px;
-}
+}    */
 /*            Header         */
 #header {
   top: 0;
