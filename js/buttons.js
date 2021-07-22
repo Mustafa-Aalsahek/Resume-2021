@@ -1,4 +1,4 @@
-const btn = document.querySelector(".btns");
+const btn = document.querySelector("#btns");
 btn.addEventListener("mousemove", (e) => {
   const xPos = e.pageX - e.target.offsetLeft;
   const yPos = e.pageY - e.target.offsetTop;
