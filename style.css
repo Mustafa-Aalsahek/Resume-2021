@@ -444,6 +444,15 @@ a {
 
   margin-top: 2em;
 }
+@media only screen and (max-width: 600px) {
+  #about-me .social {
+    width: 200px;
+    align-items: center;
+  }
+  #about-me .social span {
+    display: none;
+  }
+}
 /*#about-me .social:hover {
   transform: scale(1.1);
 }  */
